@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnología y Ciberseguridad</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">LuisSecureTech</div>
+      <ul class="nav-links">
+        <li><button onclick="mostrarSeccion('inicio')">Inicio</button></li>
+        <li><button onclick="mostrarSeccion('tecnologia')">Tecnología</button></li>
+        <li><button onclick="mostrarSeccion('ciberseguridad')">Ciberseguridad</button></li>
+        <li><button onclick="mostrarSeccion('proteccion')">Protección de Datos</button></li>
+        <li><button onclick="mostrarSeccion('contacto')">Contacto</button></li>
+      </ul>
+      <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Protege tus datos en la era digital</h1>
+    <p>Descubre cómo la tecnología moderna y la ciberseguridad te ayudan a mantenerte seguro.</p>
+    <a href="#contacto" class="btn">Contáctanos</a>
+  </section>
+
+  <section class="info-section" id="tecnologia">
+    <h2>Tecnología Moderna</h2>
+    <p>La transformación digital está revolucionando todos los sectores. Desde inteligencia artificial hasta el Internet de las Cosas, las tecnologías emergentes cambian la forma en que vivimos y trabajamos.</p>
+    <ul class="tech-list">
+      <li>Inteligencia Artificial (IA)</li>
+      <li>Blockchain y contratos inteligentes</li>
+      <li>Computación en la nube</li>
+      <li>Automatización de procesos</li>
+      <li>5G y redes avanzadas</li>
+    </ul>
+  </section>
+
+  <section class="info-section" id="ciberseguridad">
+    <h2>Ciberseguridad</h2>
+    <p>Proteger nuestros activos digitales es esencial. La ciberseguridad abarca desde firewalls hasta monitoreo continuo y respuestas automatizadas a incidentes.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Antivirus Avanzados</h3>
+        <p>Detectan amenazas en tiempo real y previenen ataques sofisticados.</p>
+      </div>
+      <div class="card">
+        <h3>Autenticación Multifactor</h3>
+        <p>Mayor seguridad para accesos a cuentas y plataformas sensibles.</p>
+      </div>
+      <div class="card">
+        <h3>Redes Seguras</h3>
+        <p>Infraestructura protegida con VPNs y protocolos de cifrado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section" id="proteccion">
+    <h2>Protección de Datos</h2>
+    <p>Las normativas como GDPR y la Ley de Protección de Datos Personales garantizan el tratamiento adecuado de la información. Es vital educar a los usuarios y tener políticas claras.</p>
+    <ul class="tech-list">
+      <li>Copias de seguridad periódicas</li>
+      <li>Control de accesos y privilegios</li>
+      <li>Encriptación de datos sensibles</li>
+      <li>Auditorías regulares</li>
+      <li>Educación en ciberhigiene</li>
+    </ul>
+  </section>
+
+  <section class="contact-section" id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CyberSecureTech. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
